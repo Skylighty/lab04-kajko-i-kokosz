@@ -29,7 +29,9 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\source\kayko.ico" />
+    <Image Include="..\source\kik.ico" />
     <Image Include="..\source\kokosh.ico" />
+    <Image Include="kik.ico" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

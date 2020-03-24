@@ -13,7 +13,9 @@ INT_PTR CALLBACK DialogProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lPara
   case WM_INITDIALOG:
     {
     HICON hIcon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_FIRST));
+    HMENU hMenu = LoadMenu(g_hInstance, MAKEINTRESOURCE(IDR_MAINMENU));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    SetMenu(hwndDlg, hMenu);
     return 0;
     }
   case WM_COMMAND:
@@ -49,7 +51,9 @@ INT_PTR CALLBACK SecProc(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
   case WM_INITDIALOG:
     {
     HICON hIcon = LoadIcon(j_hInstance, MAKEINTRESOURCE(IDI_SECOND));
+    HMENU hMenu = LoadMenu(j_hInstance, MAKEINTRESOURCE(IDR_SECMENU));
     SendMessage(hwndDlg, WM_SETICON, ICON_SMALL, (LPARAM)hIcon);
+    SetMenu(hwndDlg, hMenu);
     return 0;
     }
   case WM_COMMAND:

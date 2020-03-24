@@ -36,5 +36,11 @@
     <Image Include="..\source\kokosh.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="kik.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\source\kik.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

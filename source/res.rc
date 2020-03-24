@@ -56,13 +56,6 @@ IDI_FIRST               ICON                    "kayko.ico"
 
 IDI_SECOND              ICON                    "kokosh.ico"
 
-
-/////////////////////////////////////////////////////////////////////////////
-//
-// Menu
-//
-
-
 #endif    // Polish (Poland) resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -79,11 +72,20 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // Dialog
 //
 
-IDD_MAINVIEW DIALOGEX 0, 0, 257, 180
+IDD_MAINVIEW DIALOGEX 0, 0, 513, 224
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "KAJKO"
 FONT 8, "MS Shell Dlg", 400, 0, 0x0
 BEGIN
-    PUSHBUTTON      "Button1",IDC_BUTTON1,97,81,50,14
+    PUSHBUTTON      "No kliknij...",IDC_BUTTON1,180,69,151,74
+END
+
+IDD_SECVIEW DIALOGEX 0, 0, 511, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "KOKOSZ"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Przycisnij guzik...",IDC_BUTTON1,175,60,157,82
 END
 
 
@@ -98,9 +100,17 @@ BEGIN
     IDD_MAINVIEW, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 250
+        RIGHTMARGIN, 506
         TOPMARGIN, 7
-        BOTTOMMARGIN, 173
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_SECVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 504
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
     END
 END
 #endif    // APSTUDIO_INVOKED
@@ -112,6 +122,11 @@ END
 //
 
 IDD_MAINVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SECVIEW AFX_DIALOG_LAYOUT
 BEGIN
     0
 END
